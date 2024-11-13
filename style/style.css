@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap');
+
+:root {
+    --fonte-principal: "Press Start 2P", system-ui;
+
+    --cor-primaria: #5300C8;
+    --cor-secundaria: #f0f0f0;
+}
+
+.cabecalho {
+    background: var(--cor-primaria);
+    padding: 20px 0;
+}
+
+.cabecalho__titulo {
+    font-family: var(--fonte-principal);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--cor-secundaria);
+}
