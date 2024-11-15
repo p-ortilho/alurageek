@@ -19,7 +19,18 @@
 
     <main class="conteudo">
         <section class="conteudo__produtos"></section>
-        <section class="conteudo__formulario"></section>
+        <section class="conteudo__formulario">
+            <h1 class="conteudo__formulario__titulo">Adicionar Produto</h1>
+            <form method="post" data-formulario>
+                <input type="text" placeholder="nome..." data-nome>
+                <input type="text" placeholder="valor..." data-valor>
+                <input type="text" placeholder="imagem..." data-imagem>
+                <div class="container__formulario__botoes">
+                    <button type="submit">Guardar</button>
+                    <button>Limpar</button>
+                </div>
+            </form>
+        </section>
     </main>
 
     <footer class="rodape">
