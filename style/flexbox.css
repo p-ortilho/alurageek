@@ -1,7 +1,36 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
 .cabecalho__titulo {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.conteudo__formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container__formulario__botoes {
+    display: flex;
+    justify-content: space-between;
 }
 
 .rodape {
