@@ -6,6 +6,12 @@
 
     --cor-primaria: #5300C8;
     --cor-secundaria: #f0f0f0;
+    --cor-dark: #000000;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
 }
 
 .cabecalho {
@@ -17,6 +23,80 @@
     font-family: var(--fonte-principal);
     font-size: 1.5rem;
     font-weight: 400;
+    color: var(--cor-secundaria);
+}
+
+.conteudo {
+    height: 100%;
+    padding: 60px 40px;
+}
+
+.conteudo__formulario {
+    padding: 2.5rem;
+}
+
+.conteudo__formulario__titulo {
+    font-family: var(--fonte-principal);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--cor-dark);
+    margin-bottom: 40px;
+}
+
+form {
+    width: 100%;
+    height: 100%;
+}
+
+form input {
+    width: 100%;
+    height: 2.4rem;
+    border: 2px solid var(--cor-primaria);
+    border-radius: 26px;
+    padding: 0 0 0 0.5rem;
+
+    font-family: var(--fonte-secundaria);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+form input:focus {
+    outline: none;
+}
+
+.formulario__guardar-btn {
+    width: 40%;
+    height: 3rem;
+    border: 2px solid var(--cor-primaria);
+    border-radius: 10px;
+    background: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.formulario__guardar-btn:hover {
+    background: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
+
+.formulario__limpar-btn {
+    width: 40%;
+    height: 3rem;
+    border: 2px solid var(--cor-primaria);
+    border-radius: 10px;
+    background: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.formulario__limpar-btn:hover {
+    background: var(--cor-primaria);
     color: var(--cor-secundaria);
 }
 
