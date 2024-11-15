@@ -18,19 +18,30 @@
     </header>
 
     <main class="conteudo">
-        <section class="conteudo__produtos"></section>
+        <section class="conteudo__produtos">
+            <h1 class="conteudo__produtos__titulo">Produtos</h1>
+            <ul class="conteudo__produtos__lista" data-lista-produtos>
+                <li class="conteudo__produtos__item" data-item-produto>
+                    <img src="assets/3coracoes.png" alt="Imagem de 3 corações pixelados">
+                    <span>Nome do Produto</span>
+                    <span>R$ 0,00</span>
+                </li>
+            </ul>
+        </section>
+
         <section class="conteudo__formulario">
-            <h1 class="conteudo__formulario__titulo">Adicionar Produto</h1>
+            <h1 class="conteudo__formulario__titulo">Adicionar Produto:</h1>
             <form method="post" data-formulario>
                 <input type="text" placeholder="nome..." data-nome>
-                <input type="text" placeholder="valor..." data-valor>
+                <input type="number" placeholder="valor..." min="0.01" step="0.01" data-valor>
                 <input type="text" placeholder="imagem..." data-imagem>
                 <div class="container__formulario__botoes">
-                    <button type="submit">Guardar</button>
-                    <button>Limpar</button>
+                    <button type="submit" class="formulario__guardar-btn">Guardar</button>
+                    <button class="formulario__limpar-btn">Limpar</button>
                 </div>
             </form>
         </section>
+
     </main>
 
     <footer class="rodape">
