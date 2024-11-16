@@ -15,7 +15,7 @@ body {
     flex-direction: row;
 }
 
-.lista__produtos{
+.lista__produtos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -69,4 +69,20 @@ form {
     justify-content: center;
     align-items: center;
     gap: 5px;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .conteudo {
+        flex-direction: column;
+    }
+
+    .lista__produtos {
+        flex-direction: column;
+    }
+
+    .container__formulario__botoes {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
