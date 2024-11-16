@@ -13,19 +13,38 @@ body {
 .conteudo {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 
-.conteudo__formulario {
+.lista__produtos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.produto--item {
     display: flex;
     flex-direction: column;
+    gap: 10px;
+}
+
+.informacoes__produto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.informacoes__produto--info {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 40px;
 }
 
 .container__formulario__botoes {
