@@ -31,6 +31,59 @@ body {
     padding: 60px 40px;
 }
 
+.conteudo__produtos {
+    padding: 40px;
+    width: 85%;
+}
+
+.conteudo__produtos__titulo {
+    font-family: var(--fonte-principal);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--cor-dark);
+    margin-bottom: 40px;
+}
+
+.lista__produtos{
+    width: 60%;
+    height: 50vh;
+    overflow-y: scroll
+}
+
+.produto--item {
+    width: 196px;
+    height: 258px;
+    border: 3px solid var(--cor-dark);
+    border-radius: 10px;
+    padding: 10px;
+    background: var(--cor-primaria);
+}
+
+.produto--item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.nome__produto {
+    font-family: var(--fonte-secundaria);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--cor-secundaria);
+}
+
+.informacoes__produto--info {
+    width: 100%;
+}
+
+.valor__produto {
+    font-family: var(--fonte-secundaria);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--cor-secundaria);
+}
+
 .conteudo__formulario {
     padding: 2.5rem;
 }
@@ -45,7 +98,6 @@ body {
 
 form {
     width: 100%;
-    height: 100%;
 }
 
 form input {
@@ -103,7 +155,7 @@ form input:focus {
 .rodape {
     background: var(--cor-primaria);
     color: var(--cor-secundaria);
-    padding: 4rem;
+    padding: 2rem;
 }
 
 .rodape__logo span {
