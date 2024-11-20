@@ -1,0 +1,31 @@
+@media (max-width: 768px) {
+    body {
+        height: auto;
+    }
+
+    .conteudo {
+        padding: 0;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container__formulario__botoes {
+        flex-direction: row;
+    }
+
+    .conteudo__produtos {
+        padding: 0;
+    }
+
+    .lista__produtos {
+        justify-content: space-between;
+        
+    }
+}
+
+@media (max-width: 526px) {
+    .lista__produtos {
+        justify-content: center;
+    }
+}

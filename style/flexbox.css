@@ -70,19 +70,3 @@ form {
     align-items: center;
     gap: 5px;
 }
-
-/* Media Queries para responsividade */
-@media (max-width: 768px) {
-    .conteudo {
-        flex-direction: column;
-    }
-
-    .lista__produtos {
-        flex-direction: column;
-    }
-
-    .container__formulario__botoes {
-        flex-direction: column;
-        gap: 20px;
-    }
-}
