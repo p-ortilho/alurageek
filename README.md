@@ -9,6 +9,8 @@ AluraGeek é uma aplicação web para gerenciamento de produtos em uma plataform
 
 Esse projeto faz parte do `Challenge AluraGeek` em parceria com `Oracle One Next Education`.
 
+🐣 Acese no link: https://p-ortilho.github.io/alurageek/
+
 ## 🚀 Funcionalidades
 
 - Visualização da lista de produtos
