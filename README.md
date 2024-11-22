@@ -1,4 +1,4 @@
-# AluraGeek
+# 😃 AluraGeek
 
 ![Imagem da aplicação](image.png)
 
@@ -27,7 +27,7 @@ Esse projeto faz parte do `Challenge AluraGeek` em parceria com `Oracle One Next
 - Padrão de módulos
 - Manipulação do DOM
 
-## Operações Disponíveis na API:
+## ✔️ Operações Disponíveis na API:
 
 - `GET` `/produtos` - Listar todos os produtos
 - `POST` `/produtos` - Adicionar novo produto
