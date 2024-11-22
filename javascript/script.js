@@ -3,7 +3,6 @@ import { conexaoApi} from "./conexaoApi.js";
 const listaProdutos = document.querySelector("[data-produtos]");
 const formulario = document.querySelector("[data-formulario]");
 
-
 function criarCard(nome, preco, imagem) {
     const card = document.createElement("li");
     card.className = "produto--item";
@@ -26,37 +25,48 @@ function criarCard(nome, preco, imagem) {
     return card;
   }
   
+async function renderizarProdutos() 
+{
+
+  try {
+
+    const produtos = await conexaoApi.listarProdutos();
+
+    produtos.forEach(elemento => {
+      // Cria um card para cada produto
+      const card = criarCard(elemento.nome, elemento.preco, elemento.imagem);
+      // Adiciona um evento de deletar para o card
+      adicionarEventoDeletar(card, elemento.nome);
+      // Adiciona o card na lista de produtos
+      listaProdutos.appendChild(card);
+
+    });
+
+  } 
+  catch (erro) 
+  {
+    listaProdutos.innerHTML = `<h1>Erro ao buscar produtos: ${erro}</h1>`;
+  }
+}
+
 async function adicionarEventoDeletar(card, nome) 
 {
+    // Pega o botão de deletar do card
     const botaoDeletar = card.querySelector("[data-deletar]");
 
     botaoDeletar.addEventListener("click", async () => {
-      try {
+      try 
+      {
         await conexaoApi.deletarProduto(nome);
         card.remove(); // Remove o card da interface
-        alert("Produto deletado com sucesso!");
-      } catch (erro) {
+        
+      } catch (erro) 
+      {
         alert("Erro ao deletar o produto: " + erro);
       }
 
     });
 }
-  
-
-async function renderizarProdutos() {
-  try {
-    const produtos = await conexaoApi.listarProdutos();
-
-    produtos.forEach(elemento => {
-      const card = criarCard(elemento.nome, elemento.preco, elemento.imagem);
-      adicionarEventoDeletar(card, elemento.nome);
-      listaProdutos.appendChild(card);
-    });
-  } catch (erro) {
-    listaProdutos.innerHTML = `<h1>Erro ao buscar produtos: ${erro}</h1>`;
-  }
-}
-
 
 async function adicionarProduto(evento) {
     evento.preventDefault();
@@ -84,7 +94,5 @@ async function adicionarProduto(evento) {
     formulario.reset();
   }
   
-
-
 renderizarProdutos();
 formulario.addEventListener("submit", evento => adicionarProduto(evento));
