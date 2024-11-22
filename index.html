@@ -21,7 +21,8 @@
     <main class="conteudo">
         <section class="conteudo__produtos">
             <h1 class="conteudo__produtos__titulo">MEUS PRODUTOS</h1>
-            <ul class="lista__produtos">
+            <ul class="lista__produtos" data-produtos>
+                <!--
                 <li class="produto--item">
                     <img src="./assets/image 1.png" alt="Video game antigo">
                     <div class="informacoes__produto">
@@ -36,49 +37,19 @@
                         </div>
                     </div>
                 </li>
-
-                <li class="produto--item">
-                    <img src="./assets/image 1.png" alt="Video game antigo">
-                    <div class="informacoes__produto">
-                        <p class="nome__produto">Game boy clássico</p>
-                        <div class="informacoes__produto--info">
-                            <span class="valor__produto">R$20.00</span>
-                            <button>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-trash-fill" viewBox="0 0 16 16">
-                                    <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="produto--item">
-                    <img src="./assets/image 1.png" alt="Video game antigo">
-                    <div class="informacoes__produto">
-                        <p class="nome__produto">Game boy clássico</p>
-                        <div class="informacoes__produto--info">
-                            <span class="valor__produto">R$20.00</span>
-                            <button>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-trash-fill" viewBox="0 0 16 16">
-                                    <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </li>
-                
+                -->
             </ul>
         </section>
 
         <section class="conteudo__formulario">
             <h1 class="conteudo__formulario__titulo">Adicionar Produto:</h1>
             <form method="post" data-formulario>
-                <input type="text" placeholder="nome..." data-nome>
-                <input type="number" placeholder="valor..." min="0.01" step="0.01" data-valor>
+                <input type="text" placeholder="nome..." maxlength="20" data-nome>
+                <input type="number" placeholder="valor..." min="0.01" step="0.01" data-preco>
                 <input type="text" placeholder="imagem..." data-imagem>
                 <div class="container__formulario__botoes">
                     <button type="submit" class="formulario__guardar-btn">Guardar</button>
-                    <button class="formulario__limpar-btn">Limpar</button>
+                    <button class="formulario__limpar-btn" type="reset">Limpar</button>
                 </div>
             </form>
         </section>
@@ -97,5 +68,7 @@
             <span>Alura LATAM - 2024</span>
         </span>
     </footer>
+
+    <script type="module" src="./javascript/script.js"></script>
 </body>
 </html>
